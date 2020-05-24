@@ -1,41 +1,261 @@
+/* Fonts */
 @font-face {
     font-family: 'Akrobat';
-    src: local('Akrobat'), local('Akrobat-Regular'), url('fonts/Akrobat.woff2') format('woff2'), url('fonts/Akrobat.woff') format('woff'), url('fonts/Akrobat.ttf') format('truetype');
+    src: local('Akrobat'), local('Akrobat-Regular'), url('/fonts/Akrobat.woff2') format('woff2'), url('/fonts/Akrobat.woff') format('woff'), url('/fonts/Akrobat.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat Bold'), local('Akrobat-Bold'), url('/fonts/Akrobatbold.woff2') format('woff2'), url('/fonts/Akrobatbold.woff') format('woff'), url('/fonts/Akrobatbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat ExtraBold'), local('Akrobat-ExtraBold'), url('/fonts/Akrobatextrabold.woff2') format('woff2'), url('/fonts/Akrobatextrabold.woff') format('woff'), url('/fonts/Akrobatextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat Black'), local('Akrobat-Black'), url('/fonts/Akrobatblack.woff2') format('woff2'), url('/fonts/Akrobatblack.woff') format('woff'), url('/fonts/Akrobatblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 body {
     background-color: #171515;
 }
 
-.menu {
-    position: absolute;
-    width: 84px;
-    height: 1011px;
+.wrapper {
+    max-width: 1920px;
+    width: 100%;
+    max-height: 1011px;
+    height: 100%;
+}
+
+.menu-block {
+    position: fixed;
+    width: 5.25rem;
+    height: 100%;
     left: 0;
     top: 0;
     background: #070404;
+    text-align: center;
+    display: grid;
+}
+
+.menuToggle {
+    display: block;
+    position: relative;
+    margin-top: 43%;
+    margin-bottom: 55%;
+    left: 1.438rem;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    width: max-content;
+    min-height: 22px;
+}
+
+.menuToggle input {
+    display: block;
+    width: 37px;
+    height: 22px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+.menuToggle span {
+    display: block;
+    width: 37px;
+    height: 2px;
+    margin-bottom: 9px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    transform-origin: 3px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+.menuToggle :nth-last-child(2) {
+    width: 21px;
+}
+
+.menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+.menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+.menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    width: 37px;
+    background: #838181;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+.menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+.menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+    width: 37px;
+}
+
+/* Menu */
+.menu {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: center;
+    margin: -72px 0 0 -23px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #171515;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+.menu li {
+    padding: 2.219rem 0;
+
+    font-family: Akrobat, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #7B1111;
+
+}
+
+.menu li.text-name {
+    font-weight: 900;
+    font-size: 150px;
+    line-height: 160px;
+    text-shadow: 0 0 3px #000000;
+    margin-bottom: 7.5rem;
+}
+
+@supports (-webkit-text-stroke: 3px #767676) {
+    .menu li.text-name {
+        color: transparent;
+        -webkit-text-stroke: 3px #767676;
+    }
+}
+
+.menu a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu a li:hover {
+    color: #767676;
+    transition: color 0.3s ease;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+.menuToggle input:checked ~ ul {
+    transform: none;
 }
 
 .logo {
-    position: absolute;
-    width: 40px;
-    height: 300px;
-    left: 22px;
-    top: 104px;
-    font-family: Akrobat, serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 60px;
-    text-transform: uppercase;
+    position: relative;
+    max-height: 18.75rem;
 }
 
-@supports (-webkit-text-stroke: 2px rgba(68, 68, 68, 0.4)) {
-    /* если есть поддержка свойства: невидимый текст посетителям не понравится */
-    .logo {
-        color: transparent; /* прозрачный цвет букв */
-        -webkit-text-stroke: 2px rgba(68, 68, 68, 0.4);
-    }
+.social{
+    max-width: 11.125rem;
 }
+
+.social ul {
+    margin-left: 0;
+    padding-left: 0
+}
+
+.social ul li {
+    list-style-type: none;
+    margin-bottom: 1.875rem;
+}
+
+.line{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 1px;
+    height: 43px;
+    margin: auto;
+}
+.menu-text{
+    font-family: Akrobat sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 15px;
+
+    /* identical to box height, or 94% */
+    text-transform: uppercase;
+
+    color: #444444;
+    transform: rotate(-90deg);
+}
+/*@media (min-height: 1011px) {*/
+/*    .menuToggle {*/
+/*        min-height: 22px;*/
+/*        margin-top: 2.25rem;*/
+/*        margin-bottom: 2.875rem;*/
+/*        width: max-content;*/
+/*    }*/
+
+/*    .logo {*/
+/*        position: relative;*/
+/*        max-height: 18.75rem;*/
+/*        margin-bottom: 12.125rem;*/
+/*    }*/
+
+/*    .social {*/
+/*        position: relative;*/
+/*    }*/
+/*}*/
