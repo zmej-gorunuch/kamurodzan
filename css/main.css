@@ -43,37 +43,29 @@ html, body {
 
 body {
     background-color: #171515;
+    max-width: 1920px;
+    max-height: 1011px;
 }
 
 .wrapper {
-    max-width: 1920px;
-    width: 100%;
-    max-height: 1011px;
+    display: flex;
+    justify-content: space-between;
     height: 100%;
 }
 
 .menu-block {
-    position: fixed;
-    width: 5.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 84px;
     height: 100%;
-    left: 0;
-    top: 0;
     background: #070404;
     text-align: center;
-    display: grid;
 }
 
 .menuToggle {
-    display: block;
-    position: relative;
-    margin-top: 43%;
-    margin-bottom: 55%;
-    left: 1.438rem;
+    margin: 36px auto 6px auto;
     z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-    width: max-content;
-    min-height: 22px;
 }
 
 .menuToggle input {
@@ -111,6 +103,7 @@ body {
 
 .menuToggle span:nth-last-child(2) {
     transform-origin: 0% 100%;
+    margin: 0;
 }
 
 /*
@@ -204,50 +197,52 @@ body {
 }
 
 .logo {
-    position: relative;
-    max-height: 18.75rem;
+
 }
 
-.social{
-    max-width: 11.125rem;
+.logo img {
+    max-height: 35vh;
+}
+
+.social {
+    min-height: 30vh;
 }
 
 .social ul {
-    margin-left: 0;
-    padding-left: 0
+
 }
 
 .social ul li {
     list-style-type: none;
-    margin-bottom: 1.875rem;
+    margin: 15px 0 0;
 }
 
-.line{
+.line {
     background-color: rgba(255, 255, 255, 0.5);
     width: 1px;
-    height: 43px;
-    margin: auto;
+    min-height: 5vh;
+    margin: -35px auto 32px;
 }
-.menu-text{
-    font-family: Akrobat sans-serif;
-    font-style: normal;
+
+.menu-text {
+    font-family: Akrobat, serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 15px;
-
-    /* identical to box height, or 94% */
     text-transform: uppercase;
-
     color: #444444;
     transform: rotate(-90deg);
+    margin-bottom: 40px;
+    min-width: max-content;
+    margin-left: auto;
+    min-height: 10vh;
 }
-/*@media (min-height: 1011px) {*/
-/*    .menuToggle {*/
-/*        min-height: 22px;*/
-/*        margin-top: 2.25rem;*/
-/*        margin-bottom: 2.875rem;*/
-/*        width: max-content;*/
-/*    }*/
+
+@media (max-height: 660px) {
+    .menu-text {
+       display: none;
+    }
+}
 
 /*    .logo {*/
 /*        position: relative;*/
