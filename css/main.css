@@ -50,7 +50,7 @@ body {
 .wrapper {
     display: flex;
     justify-content: space-between;
-    height: 100%;
+    height: 100vh;
 }
 
 .menu-block {
@@ -139,8 +139,7 @@ body {
     min-width: 100%;
     min-height: 100%;
     text-align: center;
-    margin: -72px 0 0 -23px;
-    padding: 50px;
+    margin: -110px 0 0 -23px;
     padding-top: 125px;
     background: #171515;
     list-style-type: none;
@@ -151,12 +150,12 @@ body {
 }
 
 .menu li {
-    padding: 2.219rem 0;
+    padding: 2% 0;
 
     font-family: Akrobat, sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 38px;
+    font-size: 2vw;
     line-height: 40px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -166,10 +165,10 @@ body {
 
 .menu li.text-name {
     font-weight: 900;
-    font-size: 150px;
+    font-size: 8vw;
     line-height: 160px;
     text-shadow: 0 0 3px #000000;
-    margin-bottom: 7.5rem;
+    margin-bottom: 3%;
 }
 
 @supports (-webkit-text-stroke: 3px #767676) {
@@ -205,7 +204,7 @@ body {
 }
 
 .social {
-    min-height: 30vh;
+    min-height: 28vh;
 }
 
 .social ul {
@@ -224,6 +223,14 @@ body {
     margin: -35px auto 32px;
 }
 
+.menu-text-wrapper{
+    min-height: 68px;
+    width: 136px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    margin-bottom: 58px;
+}
+
 .menu-text {
     font-family: Akrobat, serif;
     font-weight: 600;
@@ -231,15 +238,10 @@ body {
     line-height: 15px;
     text-transform: uppercase;
     color: #444444;
-    transform: rotate(-90deg);
-    margin-bottom: 40px;
-    min-width: max-content;
-    margin-left: auto;
-    min-height: 10vh;
 }
 
-@media (max-height: 660px) {
-    .menu-text {
+@media (max-height: 700px) {
+    .menu-text, .line {
        display: none;
     }
 }
