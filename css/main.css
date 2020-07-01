@@ -43,28 +43,28 @@ html, body {
 
 body {
     background-color: #171515;
-    max-width: 1920px;
-    max-height: 1011px;
+    min-width: 1920px;
+    min-height: 1011px;
+    font-family: Akrobat, sans-serif;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .wrapper {
     display: flex;
-    justify-content: space-between;
     height: 100vh;
 }
 
 .menu-block {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 84px;
-    height: 100%;
+    height: 100vh;
     background: #070404;
     text-align: center;
 }
 
 .menuToggle {
-    margin: 36px auto 6px auto;
+    margin: 36px auto 51px auto;
     z-index: 1;
 }
 
@@ -87,7 +87,7 @@ body {
     position: relative;
     background: rgba(255, 255, 255, 0.5);
     z-index: 1;
-    transform-origin: 3px 0px;
+    transform-origin: 3px 0;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
     opacity 0.55s ease;
@@ -98,11 +98,11 @@ body {
 }
 
 .menuToggle span:first-child {
-    transform-origin: 0% 0%;
+    transform-origin: 0 0;
 }
 
 .menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
+    transform-origin: 0 100%;
     margin: 0;
 }
 
@@ -151,7 +151,6 @@ body {
 
 .menu li {
     padding: 2% 0;
-
     font-family: Akrobat, sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -196,7 +195,7 @@ body {
 }
 
 .logo {
-
+    margin-bottom: 180px;
 }
 
 .logo img {
@@ -204,35 +203,34 @@ body {
 }
 
 .social {
-    min-height: 28vh;
+    margin-bottom: 21px;
 }
 
 .social ul {
 
 }
 
-.social ul li {
+.social ul li:not(:last-child) {
     list-style-type: none;
-    margin: 15px 0 0;
+    margin-bottom: 30px;
 }
 
 .line {
     background-color: rgba(255, 255, 255, 0.5);
     width: 1px;
-    min-height: 5vh;
-    margin: -35px auto 32px;
+    min-height: 43px;
+    margin: 0 auto 12px;
 }
 
-.menu-text-wrapper{
-    min-height: 68px;
+.menu-text-wrapper {
+    transform: translateX(-19%) rotate(-90deg);
+    height: 15px;
     width: 136px;
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    margin-bottom: 58px;
+    margin: auto;
+    position: relative;
 }
 
 .menu-text {
-    font-family: Akrobat, serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 15px;
@@ -240,19 +238,7 @@ body {
     color: #444444;
 }
 
-@media (max-height: 700px) {
-    .menu-text, .line {
-       display: none;
-    }
+.content{
+    flex: 1 auto;
+    padding: 35px 0px 14px 171px;
 }
-
-/*    .logo {*/
-/*        position: relative;*/
-/*        max-height: 18.75rem;*/
-/*        margin-bottom: 12.125rem;*/
-/*    }*/
-
-/*    .social {*/
-/*        position: relative;*/
-/*    }*/
-/*}*/
