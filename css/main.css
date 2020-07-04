@@ -43,7 +43,7 @@ html, body {
 
 body {
     background-color: #171515;
-    font-family: Akrobat, sans-serif;
+    font-family: Akrobat, Arial, serif;
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -145,8 +145,6 @@ body {
 
 .menu li {
     padding: 2% 0;
-    font-family: Akrobat, sans-serif;
-    font-style: normal;
     font-weight: 800;
     font-size: 2vw;
     line-height: 40px;
