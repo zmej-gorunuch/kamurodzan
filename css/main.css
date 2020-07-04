@@ -43,23 +43,17 @@ html, body {
 
 body {
     background-color: #171515;
-    min-width: 1920px;
-    min-height: 1011px;
     font-family: Akrobat, sans-serif;
     color: rgba(255, 255, 255, 0.5);
 }
 
-.wrapper {
+.header-wrapper {
     display: flex;
-    height: 100vh;
 }
 
 .menu-block {
     display: flex;
-    flex-direction: column;
     width: 84px;
-    height: 100vh;
-    background: #070404;
     text-align: center;
 }
 
@@ -210,8 +204,11 @@ body {
 
 }
 
-.social ul li:not(:last-child) {
+.social ul li{
     list-style-type: none;
+}
+
+.social ul li:not(:last-child) {
     margin-bottom: 30px;
 }
 
@@ -237,8 +234,16 @@ body {
     text-transform: uppercase;
     color: #444444;
 }
-
-.content{
-    flex: 1 auto;
-    padding: 35px 0px 14px 171px;
+.title{
+    text-align: left;
+}
+.title h1{
+    color: transparent;
+    -webkit-text-stroke: 2px #767676;
+    text-transform: uppercase;
+}
+.title h2{
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #7B1111;
 }

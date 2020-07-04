@@ -1,5 +1,58 @@
-@media (max-height: 700px) {
-    .menu-text, .line {
-       display: none;
+@media (max-height: 990px) {
+    .logo {
+        margin-bottom: 76px;
+    }
+}
+@media (max-height: 890px) {
+    .line, .menu-text-wrapper {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .header-wrapper {
+        height: 100vh;
+    }
+    .menu-block {
+        flex-direction: column;
+        height: 100vh;
+        background: #070404;
+    }
+    header{
+        padding: 35px 0 14px 171px;
+    }
+}
+@media (max-width: 480px) {
+    .line, .menu-text-wrapper, .social, .logo, .address {
+        display: none;
+    }
+    .menu-block {
+        flex-direction: row;
+    }
+    .menuToggle{
+        margin: 15px 10px;
+    }
+    header{
+        margin: 11px 10px 65px auto;
+    }
+    .phone{
+        font-size: 18px;
+    }
+    .content{
+        margin: 0 10px;
+    }
+    .title h1{
+        margin-bottom: 11px;
+        font-weight: 900;
+        font-size: 55px;
+        line-height: 54px;
+    }
+    .title h2{
+        font-weight: 800;
+        font-size: 34px;
+        line-height: 45px;
     }
 }
