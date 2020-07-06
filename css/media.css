@@ -35,6 +35,10 @@
     .menuToggle{
         margin: 15px 10px;
     }
+    .menu_title {
+        font-size: 48px;
+        line-height: 48px;
+    }
     header{
         margin: 11px 10px 65px auto;
     }
