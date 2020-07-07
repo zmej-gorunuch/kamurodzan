@@ -3,6 +3,7 @@
         margin-bottom: 76px;
     }
 }
+
 @media (max-height: 890px) {
     .line, .menu-text-wrapper {
         display: none;
@@ -12,49 +13,62 @@
 @media (min-width: 768px) and (max-width: 979px) {
 
 }
+
 @media (min-width: 481px) and (max-width: 767px) {
     .header-wrapper {
         height: 100vh;
     }
+
     .menu-block {
         flex-direction: column;
         height: 100vh;
         background: #070404;
     }
-    header{
+
+    header {
         padding: 35px 0 14px 171px;
     }
 }
+
 @media (max-width: 480px) {
     .line, .menu-text-wrapper, .social, .logo, .address {
         display: none;
     }
+
     .menu-block {
         flex-direction: row;
     }
-    .menuToggle{
+
+    .menuToggle {
         margin: 15px 10px;
     }
+
     .menu_title {
         font-size: 48px;
         line-height: 48px;
+        margin-bottom: 55px;
     }
-    header{
+
+    header {
         margin: 11px 10px 65px auto;
     }
-    .phone{
+
+    .phone {
         font-size: 18px;
     }
-    .content{
+
+    .content {
         margin: 0 10px;
     }
-    .title h1{
+
+    .title h1 {
         margin-bottom: 11px;
         font-weight: 900;
-        font-size: 46px;
-        line-height: 46px;
+        font-size: 48px;
+        line-height: 48px;
     }
-    .title h2{
+
+    .title h2 {
         font-weight: 800;
         font-size: 34px;
         line-height: 45px;

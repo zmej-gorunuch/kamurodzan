@@ -2,6 +2,13 @@
 @font-face {
     font-family: 'Akrobat';
     src: local('Akrobat'), local('Akrobat-Regular'), url('/fonts/Akrobat.woff2') format('woff2'), url('/fonts/Akrobat.woff') format('woff'), url('/fonts/Akrobat.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat SemiBold'), local('Akrobat-SemiBold'), url('/fonts/Akrobatsemibold.woff2') format('woff2'), url('/fonts/Akrobatsemibold.woff') format('woff'), url('/fonts/Akrobatsemibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
@@ -46,6 +53,10 @@ body {
     font-family: Akrobat, Arial, sans-serif;
     font-size: 22px;
     color: rgba(255, 255, 255, 0.5);
+}
+
+.no-scroll{
+    overflow: hidden;
 }
 
 .header-wrapper {
@@ -250,6 +261,14 @@ body {
     color: #7B1111;
 }
 
+.block_content:not(:last-child) {
+    margin-bottom: 124px;
+}
+
+.block_content:last-child {
+    margin-bottom: 40px;
+}
+
 .block_content a {
     text-decoration: none;
 }
@@ -293,4 +312,14 @@ body {
     text-transform: uppercase;
     padding: 0 116px;
     display: inline-block;
+}
+
+footer p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: rgba(68, 68, 68, 0.5);
+    margin-bottom: 23px;
 }
