@@ -326,7 +326,7 @@ body {
 }
 
 .btn-more {
-    width: 300px;
+    width: 100%;
     border: 4px solid #7B1111;
     box-sizing: border-box;
     text-align: center;
@@ -334,7 +334,7 @@ body {
     font-weight: 700;
     color: #7B1111;
     text-transform: uppercase;
-    padding: 0 116px;
+    /*padding: 0 116px;*/
     display: inline-block;
 }
 
