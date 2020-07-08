@@ -39,6 +39,10 @@
         flex-direction: row;
     }
 
+    .menu {
+        padding-top: 70px;
+    }
+
     .menuToggle {
         margin: 15px 10px;
     }
