@@ -1,35 +1,49 @@
 /* Fonts */
 @font-face {
     font-family: 'Akrobat';
-    src: local('Akrobat'), local('Akrobat-Regular'), url('/fonts/Akrobat.woff2') format('woff2'), url('/fonts/Akrobat.woff') format('woff'), url('/fonts/Akrobat.ttf') format('truetype');
+    src: local('Akrobat Thin'), local('Akrobat-Thin'), url('/fonts/Akrobat-Thin.woff2') format('woff2'), url('/fonts/Akrobat-Thin.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat Light'), local('Akrobat-Light'), url('/fonts/Akrobat-Light.woff2') format('woff2'), url('/fonts/Akrobat-Light.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: local('Akrobat Regular'), local('Akrobat-Regular'), url('/fonts/Akrobat-Regular.woff2') format('woff2'), url('/fonts/Akrobat-Regular.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Akrobat';
-    src: local('Akrobat SemiBold'), local('Akrobat-SemiBold'), url('/fonts/Akrobatsemibold.woff2') format('woff2'), url('/fonts/Akrobatsemibold.woff') format('woff'), url('/fonts/Akrobatsemibold.ttf') format('truetype');
+    src: local('Akrobat SemiBold'), local('Akrobat-SemiBold'), url('/fonts/Akrobat-SemiBold.woff2') format('woff2'), url('/fonts/Akrobat-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Akrobat';
-    src: local('Akrobat Bold'), local('Akrobat-Bold'), url('/fonts/Akrobatbold.woff2') format('woff2'), url('/fonts/Akrobatbold.woff') format('woff'), url('/fonts/Akrobatbold.ttf') format('truetype');
+    src: local('Akrobat Bold'), local('Akrobat-Bold'), url('/fonts/Akrobat-Bold.woff2') format('woff2'), url('/fonts/Akrobat-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Akrobat';
-    src: local('Akrobat ExtraBold'), local('Akrobat-ExtraBold'), url('/fonts/Akrobatextrabold.woff2') format('woff2'), url('/fonts/Akrobatextrabold.woff') format('woff'), url('/fonts/Akrobatextrabold.ttf') format('truetype');
+    src: local('Akrobat ExtraBold'), local('Akrobat-ExtraBold'), url('/fonts/Akrobat-ExtraBold.woff2') format('woff2'), url('/fonts/Akrobat-ExtraBold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Akrobat';
-    src: local('Akrobat Black'), local('Akrobat-Black'), url('/fonts/Akrobatblack.woff2') format('woff2'), url('/fonts/Akrobatblack.woff') format('woff'), url('/fonts/Akrobatblack.ttf') format('truetype');
+    src: local('Akrobat Black'), local('Akrobat-Black'), url('/fonts/Akrobat-Black.woff2') format('woff2'), url('/fonts/Akrobat-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
@@ -55,8 +69,18 @@ body {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.no-scroll{
+.no-scroll {
     overflow: hidden;
+}
+
+.wrapper {
+    background-image: url("/img/bg.png");
+    background-attachment: fixed;
+    -moz-background-size: 170%;
+    -webkit-background-size: 170%;
+    -o-background-size: 170%;
+    background-size: 170%;
+    background-position: bottom;
 }
 
 .header-wrapper {
@@ -85,33 +109,6 @@ body {
     -webkit-touch-callout: none;
 }
 
-.menuToggle span {
-    display: block;
-    width: 37px;
-    height: 2px;
-    margin-bottom: 9px;
-    position: relative;
-    background: rgba(255, 255, 255, 0.5);
-    z-index: 1;
-    transform-origin: 3px 0;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-    opacity 0.55s ease;
-}
-
-.menuToggle :nth-last-child(2) {
-    width: 21px;
-}
-
-.menuToggle span:first-child {
-    transform-origin: 0 0;
-}
-
-.menuToggle span:nth-last-child(2) {
-    transform-origin: 0 100%;
-    margin: 0;
-}
-
 /*
  * Transform all the slices of hamburger
  * into a crossmark.
@@ -137,6 +134,33 @@ body {
 .menuToggle input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
     width: 37px;
+}
+
+.menuToggle span {
+    display: block;
+    width: 37px;
+    height: 2px;
+    margin-bottom: 9px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    transform-origin: 3px 0;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+.menuToggle :nth-last-child(2) {
+    width: 21px;
+}
+
+.menuToggle span:first-child {
+    transform-origin: 0 0;
+}
+
+.menuToggle span:nth-last-child(2) {
+    transform-origin: 0 100%;
+    margin: 0;
 }
 
 /* Menu */

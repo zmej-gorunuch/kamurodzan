@@ -1,3 +1,7 @@
-$('.menuToggle input').click(function () {
-    $('body').toggleClass('no-scroll');
+$('.menuToggle input').prop('checked', false).click(function () {
+    if ($('.menuToggle input').is(':checked')) {
+        $('body').toggleClass('no-scroll');
+    } else {
+        $('body').toggleClass('no-scroll');
+    }
 });
