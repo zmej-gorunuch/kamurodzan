@@ -83,22 +83,22 @@ body {
     background-position: bottom;
 }
 
-.header-wrapper {
+.menu_wrapper {
     display: flex;
 }
 
-.menu-block {
+.menu {
     display: flex;
     width: 84px;
     text-align: center;
 }
 
-.menuToggle {
+.menu__menu-toggle {
     margin: 36px auto 51px auto;
     z-index: 1;
 }
 
-.menuToggle input {
+.menu__menu-toggle input {
     display: block;
     width: 37px;
     height: 22px;
@@ -113,7 +113,7 @@ body {
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-.menuToggle input:checked ~ span {
+.menu__menu-toggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     width: 37px;
@@ -123,7 +123,7 @@ body {
 /*
  * But let's hide the middle one.
  */
-.menuToggle input:checked ~ span:nth-last-child(3) {
+.menu__menu-toggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
@@ -131,12 +131,12 @@ body {
 /*
  * Ohyeah and the last one should go the other direction
  */
-.menuToggle input:checked ~ span:nth-last-child(2) {
+.menu__menu-toggle input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
     width: 37px;
 }
 
-.menuToggle span {
+.menu__menu-toggle span {
     display: block;
     width: 37px;
     height: 2px;
@@ -150,21 +150,21 @@ body {
     opacity 0.55s ease;
 }
 
-.menuToggle :nth-last-child(2) {
+.menu__menu-toggle :nth-last-child(2) {
     width: 21px;
 }
 
-.menuToggle span:first-child {
+.menu__menu-toggle span:first-child {
     transform-origin: 0 0;
 }
 
-.menuToggle span:nth-last-child(2) {
+.menu__menu-toggle span:nth-last-child(2) {
     transform-origin: 0 100%;
     margin: 0;
 }
 
 /* Menu */
-.menu {
+.menu__menu-list {
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -181,7 +181,7 @@ body {
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
-.menu_title {
+.menu__menu-list__menu-title {
     font-weight: 900;
     font-size: 55px;
     line-height: 54px;
@@ -192,7 +192,7 @@ body {
     margin-bottom: 106px;
 }
 
-.menu li {
+.menu__menu-list li {
     font-weight: 800;
     font-size: 27px;
     line-height: 40px;
@@ -204,12 +204,12 @@ body {
     margin-bottom: 30px;
 }
 
-.menu a {
+.menu__menu-list a {
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.menu a li:hover {
+.menu__menu-list a li:hover {
     color: #767676;
     transition: color 0.3s ease;
 }
@@ -217,42 +217,42 @@ body {
 /*
  * And let's slide it in from the left
  */
-.menuToggle input:checked ~ ul {
+.menu__menu-toggle input:checked ~ ul {
     transform: none;
 }
 
-.logo {
+.menu__logo {
     margin-bottom: 180px;
 }
 
-.logo img {
+.menu__logo img {
     max-height: 35vh;
 }
 
-.social {
+.menu__social {
     margin-bottom: 21px;
 }
 
-.social ul {
+.menu__social ul {
 
 }
 
-.social ul li {
+.menu__social ul li {
     list-style-type: none;
 }
 
-.social ul li:not(:last-child) {
+.menu__social ul li:not(:last-child) {
     margin-bottom: 30px;
 }
 
-.line {
+.menu__line {
     background-color: rgba(255, 255, 255, 0.5);
     width: 1px;
     min-height: 43px;
     margin: 0 auto 12px;
 }
 
-.menu-text-wrapper {
+.menu_menu-text-wrapper {
     transform: translateX(-19%) rotate(-90deg);
     height: 15px;
     width: 136px;
@@ -260,7 +260,7 @@ body {
     position: relative;
 }
 
-.menu-text {
+.menu__menu-text {
     font-weight: 600;
     font-size: 16px;
     line-height: 15px;
@@ -268,40 +268,40 @@ body {
     color: #444444;
 }
 
-.title {
+.content__title {
     text-align: left;
     margin-bottom: 54px;
 }
 
-.title h1 {
+.content__title h1 {
     color: transparent;
     -webkit-text-stroke: 2px #767676;
     text-transform: uppercase;
 }
 
-.title h2 {
+.content__title h2 {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #7B1111;
 }
 
-.block_content:not(:last-child) {
+.content__block-content:not(:last-child) {
     margin-bottom: 124px;
 }
 
-.block_content:last-child {
+.content__block-content:last-child {
     margin-bottom: 40px;
 }
 
-.block_content a {
+.content__block-content a {
     text-decoration: none;
 }
 
-.block_content_img {
+.content__block-content-img {
     text-align: center;
 }
 
-.block_content_title h2 {
+.content__block-content-title h2 {
     font-weight: 800;
     font-size: 27px;
     line-height: 40px;
@@ -312,7 +312,7 @@ body {
     margin-bottom: 41px;
 }
 
-.block_content_description {
+.content__block-content-description {
     font-weight: 600;
     line-height: 30px;
     font-style: normal;
@@ -321,11 +321,11 @@ body {
     margin-bottom: 46px;
 }
 
-.block_content_btn {
+.content__block-content-btn {
     text-align: center;
 }
 
-.btn-more {
+.content__btn-more {
     width: 100%;
     border: 4px solid #7B1111;
     box-sizing: border-box;
