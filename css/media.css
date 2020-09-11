@@ -46,7 +46,7 @@
         -webkit-text-stroke: 3px #767676;
     }
 
-    .menu__menu-list li {
+    .menu__menu-list li a {
         text-shadow: 0 4px 8px #000000;
         font-size: 38px;
         margin-bottom: 71px;
@@ -179,7 +179,7 @@
         -webkit-text-stroke: 3px #767676;
     }
 
-    .menu__menu-list li {
+    .menu__menu-list li a {
         text-shadow: 0 4px 8px #000000;
         font-size: 38px;
         margin-bottom: 71px;
@@ -312,7 +312,7 @@
         -webkit-text-stroke: 3px #767676;
     }
 
-    .menu__menu-list li {
+    .menu__menu-list li a {
         text-shadow: 0 4px 8px #000000;
         font-size: 38px;
         margin-bottom: 71px;
@@ -444,7 +444,7 @@
         -webkit-text-stroke: 3px #767676;
     }
 
-    .menu__menu-list li {
+    .menu__menu-list li a {
         text-shadow: 0 4px 8px #000000;
         font-size: 38px;
         margin-bottom: 71px;
@@ -576,7 +576,7 @@
         -webkit-text-stroke: 3px #767676;
     }
 
-    .menu__menu-list li {
+    .menu__menu-list li a {
         text-shadow: 0 4px 8px #000000;
         font-size: 38px;
         margin-bottom: 71px;
@@ -699,7 +699,7 @@
         font-size: 105px;
     }
 
-    .menu__menu-list li {
+    .menu__menu-list li a {
         text-shadow: 0 4px 8px #000000;
     }
 
@@ -773,7 +773,7 @@
         margin-bottom: 55px;
     }
 
-    .menu__menu-list li {
+    .menu__menu-list li a {
         text-shadow: 0 4px 8px #000000;
     }
 
@@ -834,7 +834,7 @@
         margin-bottom: 55px;
     }
 
-    .menu__menu-list li {
+    .menu__menu-list li a {
         text-shadow: 0 4px 8px #000000;
     }
 
