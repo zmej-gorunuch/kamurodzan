@@ -188,6 +188,10 @@ body {
     margin-bottom: 106px;
 }
 
+.menu__menu-list li{
+    margin-bottom: 30px;
+}
+
 .menu__menu-list li a {
     font-weight: 800;
     line-height: 40px;
@@ -196,7 +200,6 @@ body {
     text-transform: uppercase;
     color: #7B1111;
     text-shadow: 0 4px 40px #000000;
-    margin-bottom: 30px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -228,10 +231,6 @@ body {
 
 .menu__social {
     margin-bottom: 21px;
-}
-
-.menu__social ul {
-
 }
 
 .menu__social ul li {

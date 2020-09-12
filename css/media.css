@@ -307,7 +307,7 @@
     }
 
     .menu__menu-list__menu-title {
-        margin-top: 154px;
+        margin-top: 110px;
         font-size: 150px;
         -webkit-text-stroke: 3px #767676;
     }
@@ -439,7 +439,7 @@
     }
 
     .menu__menu-list__menu-title {
-        margin-top: 154px;
+        margin-top: 60px;
         font-size: 150px;
         -webkit-text-stroke: 3px #767676;
     }
@@ -571,7 +571,6 @@
     }
 
     .menu__menu-list__menu-title {
-        margin-top: 154px;
         font-size: 150px;
         -webkit-text-stroke: 3px #767676;
     }
@@ -773,6 +772,10 @@
         margin-bottom: 55px;
     }
 
+    .menu__menu-list li {
+        margin-bottom: 16px;
+    }
+
     .menu__menu-list li a {
         text-shadow: 0 4px 8px #000000;
     }
@@ -832,6 +835,10 @@
         font-size: 48px;
         line-height: 48px;
         margin-bottom: 55px;
+    }
+
+    .menu__menu-list li {
+        margin-bottom: 10px;
     }
 
     .menu__menu-list li a {
