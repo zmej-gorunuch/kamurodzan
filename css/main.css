@@ -188,7 +188,7 @@ body {
     margin-bottom: 106px;
 }
 
-.menu__menu-list li{
+.menu__menu-list li {
     margin-bottom: 30px;
 }
 
@@ -271,6 +271,8 @@ body {
     width: 100%;
     text-align: right;
 }
+
+/* Main page */
 
 header {
     padding: 35px 0 37px 0;
@@ -361,7 +363,7 @@ header {
     text-decoration: none;
 }
 
-.btn-more{
+.btn-more {
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
     outline: 1px solid;
     text-shadow: none;
@@ -385,4 +387,26 @@ footer p {
     text-transform: uppercase;
     color: rgba(68, 68, 68, 0.5);
     margin-bottom: 23px;
+}
+
+/* Default page */
+.header__menu {
+
+}
+
+.header__menu ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.header__menu ul li a {
+    color: #767676;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.header__menu ul li a:hover {
+    color: #7B1111;
 }
