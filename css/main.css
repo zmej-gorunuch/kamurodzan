@@ -287,11 +287,6 @@ body {
 }
 
 /* Main page */
-
-header {
-    padding: 35px 0 37px 0;
-}
-
 .header__address {
     font-size: 22px;
     text-transform: uppercase;
@@ -404,8 +399,24 @@ footer p {
 }
 
 /* Default page */
-.header__menu {
+.header__menu .mobile_menu {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    text-align: center;
+    position: relative;
+    top: -8px;
+    cursor: pointer;
+}
 
+.header__menu .mobile_menu_list {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header__menu .mobile_menu_list a {
+    margin-right: 0;
+    line-height: 40px;
 }
 
 .header__menu ul {
