@@ -132,6 +132,10 @@
         font-size: 36px;
     }
 
+    footer {
+        margin-left: 84px;
+    }
+
     /*  Default page  */
     .mobile_menu {
         display: none;
@@ -262,6 +266,10 @@
     .content__block-content-title h2 {
         font-size: 36px;
         margin-bottom: 0;
+    }
+
+    footer {
+        margin-left: 84px;
     }
 
     /*  Default page */
@@ -407,6 +415,10 @@
         margin-bottom: 0;
     }
 
+    footer {
+        margin-left: 84px;
+    }
+
     /* Default page */
     .mobile_menu {
         display: none;
@@ -548,6 +560,10 @@
     .content__block-content-title h2 {
         font-size: 28px;
         margin-bottom: 0;
+    }
+
+    footer {
+        margin-left: 84px;
     }
 
     /*  Default page  */
@@ -709,6 +725,10 @@
         line-height: 30px;
     }
 
+    footer {
+        margin-left: 84px;
+    }
+
     /*  Default page  */
     .header__menu .mobile_menu {
         width: 670px;
@@ -825,6 +845,10 @@
 
     .content__title h2 {
         font-size: 26px;
+    }
+
+    footer {
+        margin-left: 84px;
     }
 
     /*  Default page  */
