@@ -1,2 +1,2 @@
 # kamurodzan
-Demo: https://zmej-gorunuch.github.io/kamurodzan/
+Demo: https://zmej-gorunuch.github.io/kamurodzan/sitemap.html
