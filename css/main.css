@@ -759,6 +759,7 @@ footer p {
 .article_content_section .article-info {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 66px;
 }
 
@@ -776,8 +777,8 @@ footer p {
     text-transform: uppercase;
 }
 
-.article_content_section .article-info .social-share .icon:first-child {
-    margin-left: 44px;
+.article_content_section .article-info .social-share .share-text {
+    margin-right: 44px;
 }
 
 .article_content_section .article-info .social-share .icon:not(:last-child) {
@@ -791,8 +792,9 @@ footer p {
 }
 
 .article_content_section .content-img img {
-    min-width: auto;
-    min-height: 563px;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
 }
 
 .article_content_section .content {
@@ -849,20 +851,16 @@ footer p {
 
 .article_content_section .content blockquote::before {
     content: "\"";
-    margin: 0 0 41px 22px;
     font-weight: 900;
     color: #7B1111;
-    width: 30px;
     display: inline-block;
     font-size: 36px;
 }
 
 .article_content_section .content blockquote::after {
     content: "\"";
-    margin: 0 0 41px 8px;
     font-weight: 900;
     color: #7B1111;
-    width: 30px;
     display: inline-block;
     font-size: 36px;
 }
