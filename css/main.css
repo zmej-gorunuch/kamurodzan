@@ -942,3 +942,55 @@ footer p {
     align-self: end;
     display: flex;
 }
+
+/* Contacts page */
+.contact_section {
+    display: flex;
+    margin: 135px 0 0;
+}
+
+.contact_section .contact_content {
+    min-width: 570px;
+}
+
+.contact_section .contact_content:not(:last-child) {
+    margin-right: 150px;
+}
+
+.contact_section .contact_content h1, h2 {
+    font-family: Akrobat, serif;
+    font-weight: 800;
+    font-size: 36px;
+    color: #7B1111;
+    text-transform: uppercase;
+    margin-bottom: 41px;
+}
+
+.contact_section .contact_content img {
+    width: 100%;
+}
+
+.contact_section .contact_content p {
+    font-family: Gotham Pro, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0 0 16px;
+}
+.contact_section .contact_content .wrapper_col {
+    display: flex;
+    min-width: 280px;
+    margin-top: 70px;
+}
+
+.contact_section .contact_content .wrapper_col .column:not(:last-child) {
+    margin-right: 70px;
+}
+
+.contact_section .contact_content .wrapper_col .column .title {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 36px;
+    color: #949494;
+    text-transform: uppercase;
+}
